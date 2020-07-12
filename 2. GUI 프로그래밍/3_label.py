@@ -14,7 +14,7 @@ label2.pack()
 def change():
     label1.config(text="또 만나요")
 
-    global photo2
+    global photo2  #  함수 밖을 나가면 가비지 컬렉트됨
     photo2 = PhotoImage(file="D:/Google 드라이브/Programming/파이썬 무료 강의_활용편/2. GUI 프로그래밍/img2.png")
     label2.config(image=photo2)
 
