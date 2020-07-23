@@ -5,6 +5,7 @@ root.title('Nado GUI')
 root.geometry("640x480") # 가로 * 세로
 
 chkvar = IntVar() # chkvar에 int형으로 값을 저장
+# chkvar.set(1) # 미리 설정해둠
 chkbox = Checkbutton(root, text="오늘 하루 보지 않기", variable=chkvar)
 # chkbox.select() # 자동 선택 처리
 # chkbox.deselect() # 선택 해제 처리

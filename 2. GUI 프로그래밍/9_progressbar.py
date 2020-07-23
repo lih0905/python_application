@@ -6,13 +6,13 @@ root = Tk()
 root.title('Nado GUI')
 root.geometry("640x480") # 가로 * 세로
 
-# #progressbar = ttk.Progressbar(root, maximum=100, mode="indeterminate") # 바가 움직임
+progressbar = ttk.Progressbar(root, maximum=100, mode="indeterminate") # 바가 좌우로 움직임
 # progressbar = ttk.Progressbar(root, maximum=100, mode="determinate") # 바가 처음부터 올라감
-# progressbar.start(10) # 10ms 마다 움직임
-# progressbar.pack()
+progressbar.start(10) # 10ms 마다 움직임
+progressbar.pack()
 
-# def btncmd():
-#     progressbar.stop() # 작동 중지
+def btncmd():
+    progressbar.stop() # 작동 중지
 
 p_var2 = DoubleVar()
 progressbar2 = ttk.Progressbar(root, maximum=100, length=150, variable=p_var2)  # length=길이
